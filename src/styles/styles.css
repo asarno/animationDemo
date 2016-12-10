@@ -1,0 +1,26 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.box {
+  height: 200px;
+  width: 200px;
+  border-radius: 100px;
+  background: linear-gradient(180deg, red, yellow);
+  margin: auto;
+}
+
+.sky {
+  width: 100vw;
+  height: 100vw;
+}
+
+.sea {
+  width: 100vw;
+  height: 200px;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 0;
+  background-color: rgba(10, 100, 155, 1);
+}
