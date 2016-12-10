@@ -1,4 +1,5 @@
-import { Observable } from 'rxjs/Rx';
-import { nextTick } from './actions.js';
+import { createSuperstream, createStatestream } from 'omnistream';
 
-const timer = (superstream) => nextTick(Rx.Observable.interval(1000));
+export const timer = (superstream) => {
+  return superstream.filterForActionTypes(['SET_NEXT_ANIMATION_STEP'])
+};
